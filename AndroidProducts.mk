@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES += \
-    device/essential/mata/aicp_mata.mk
+    device/essential/mata/bliss_mata.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_mata-user \
-    aicp_mata-userdebug \
-    aicp_mata-eng
+    bliss_mata-user \
+    bliss_mata-userdebug \
+    bliss_mata-eng

@@ -1,6 +1,6 @@
-# Inherit some common Lineage stuff.
+# Inherit some common Bliss stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -24,7 +24,7 @@ endif
 
 # Device identifiers
 PRODUCT_DEVICE := mata
-PRODUCT_NAME := aicp_mata
+PRODUCT_NAME := bliss_mata
 PRODUCT_BRAND := essential
 PRODUCT_MODEL := PH-1
 PRODUCT_MANUFACTURER := Essential Products
@@ -44,6 +44,6 @@ BUILD_FINGERPRINT := essential/mata/mata:8.1.0/OPM1.180104.092/224:user/release-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# AICP Device Maintainers
+# Bliss Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Vlad Adumitroaie (celtare21)"
+    DEVICE_MAINTAINERS="srgrusso"
