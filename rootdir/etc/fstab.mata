@@ -4,7 +4,7 @@
 
 #<src>                                                  <mnt_point>        <type> <mnt_flags and options>                          <fs_mgr_flags>
 /dev/block/platform/soc/1da4000.ufshc/by-name/system    /                  ext4   ro,barrier=1                                     wait,slotselect,verify
-/dev/block/platform/soc/1da4000.ufshc/by-name/userdata  /data              ext4   noatime,nosuid,nodev,barrier=1,noauto_da_alloc,journal_async_commit,data=writeback,discard,commit=300   latemount,wait,check,formattable,fileencryption=ice,quota,reservedsize=128M
+/dev/block/platform/soc/1da4000.ufshc/by-name/userdata  /data              ext4   noatime,nosuid,nodev,barrier=1,noauto_da_alloc,journal_async_commit,data=writeback,discard,commit=300   latemount,wait,check,formattable,encryptable=ice,quota,reservedsize=128M
 /dev/block/platform/soc/1da4000.ufshc/by-name/userdata  /data              f2fs   noatime,nosuid,nodev,nodiratime,fsync_mode=nobarrier,background_gc=off,discard   latemount,wait,check,formattable,encryptable=footer,quota,reservedsize=128M
 /dev/block/platform/soc/1da4000.ufshc/by-name/misc      /misc              emmc   defaults                                         defaults
 /dev/block/platform/soc/1da4000.ufshc/by-name/modem     /firmware          vfat   ro,shortname=lower,uid=1000,gid=1000,dmask=222,fmask=333,context=u:object_r:firmware_file:s0 wait,slotselect
