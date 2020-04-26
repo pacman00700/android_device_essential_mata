@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libqdMetaData
 
+# Goggle Camera
+PRODUCT_PACKAGES += \
+    Gcam    
+    
 # Device settings
 #PRODUCT_PACKAGES += \
 #    DeviceSettings
