@@ -26,7 +26,9 @@ TARGET_RECOVERY_FSTAB := device/essential/mata/rootdir/etc/fstab.mata
 endif
 
 # Inherit PixelGApps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifiers
 PRODUCT_DEVICE := mata
