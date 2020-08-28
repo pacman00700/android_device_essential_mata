@@ -30,6 +30,13 @@ $(call inherit-product-if-exists, vendor/gapps/config.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
+TARGET_GAPPS_OVERRIDE += \
+    GoogleDialer \
+    GoogleCamera \
+    Photos \
+    PrebuiltGmail \
+    NfcNci
+    
 # Device identifiers
 PRODUCT_DEVICE := mata
 PRODUCT_NAME := bliss_mata
